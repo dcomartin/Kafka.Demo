@@ -1,3 +1,8 @@
+# YouTube Tutorial
+https://www.youtube.com/watch?v=n_IQq3pze0s
+
+# Blog Tutorial
+
 # Create Docker Network
 ```
 docker network create kafka
