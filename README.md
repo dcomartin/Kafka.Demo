@@ -29,5 +29,11 @@ docker run -d --network=kafka --name=kafka -e KAFKA_ZOOKEEPER_CONNECT=zookeeper:
 Create a topic called "demo".
 
 ```
-bin/kafka-topics.sh --create --zookeeper localhost:2181 --topic demo
+docker exec -ti kafka kafka-topics --create --if-not-exists --zookeeper zookeeper:2181 --partitions 1 --replication-factor 1 --topic demo
+```
+
+List topics.
+
+```
+docker exec -ti kafka kafka-topics --list --zookeeper zookeeper:2181
 ```
